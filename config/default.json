@@ -1,3 +1,6 @@
 {
-  "mongoURI": "mongodb+srv://admin:XobraT1@3!MA@cluster0-wznjm.mongodb.net/test?retryWrites=true"
+  "mongoURI": "mongodb+srv://admin:XobraT1@3!MA@cluster0-wznjm.mongodb.net/test?retryWrites=true",
+  "jwtSecret": "mysecrettoken",
+  "githubClientId": "099bcb4ceb91106d3559",
+  "githubSecret": "57e3759c1200f69980c67db3a3a812a4f7561793"
 }
