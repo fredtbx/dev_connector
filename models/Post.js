@@ -7,6 +7,10 @@ const PostSchema = new Schema({
     refs: 'users'
   },
   text: {
+    type: String,
+    required: true
+  },
+  name: {
     type: String
   },
   avatar: {
@@ -34,7 +38,7 @@ const PostSchema = new Schema({
         type: String
       },
       avatar: {
-        type: string
+        type: String
       },
       date: {
         type: Date,
@@ -47,3 +51,5 @@ const PostSchema = new Schema({
     default: Date.now
   }
 });
+
+module.exports = Post = mongoose.model('post', PostSchema);
