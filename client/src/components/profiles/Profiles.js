@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Spinner from '../layout/Spinner';
 import ProfileItem from './ProfileItem';
-import { getProfiles } from '../../actions/profile'
+import { getProfiles } from '../../actions/profile';
 
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
@@ -22,8 +22,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
           ))
         ) : <h4>No profiles found...</h4> }
       </div>
-      </Fragment>
-      }
+      </Fragment> }
   </Fragment>;
 };
 
@@ -36,4 +35,4 @@ const mapStateToProps = state => ({
   profile: state.profile
 });
 
-export default connect(mapStateToProps, { getProfiles})(Profiles);
+export default connect(mapStateToProps, { getProfiles })(Profiles);
